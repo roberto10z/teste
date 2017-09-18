@@ -111,7 +111,7 @@ class MainTableViewController: UITableViewController {
     func addAfazeres(){
         let meuAlerta = UIAlertController(title: "Nova Tarefa", message: "Insira a tarefa e a sua descrição", preferredStyle: UIAlertControllerStyle.alert)
         
-        let confirmarAction = UIAlertAction(title: "Confirmar", style: UIAlertActionStyle.default) { (alert) in //os alerts
+        let confirmarAction = UIAlertAction(title: "Confirmar", style: UIAlertActionStyle.default) { (alert) in
             if let titulo = (meuAlerta.textFields![0] as UITextField).text {
                 let desc = (meuAlerta.textFields![1] as UITextField).text ?? ""
                 self.meusAfazeres.listaIncompletas.append((titulo,desc))
