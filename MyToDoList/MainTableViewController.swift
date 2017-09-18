@@ -69,7 +69,7 @@ class MainTableViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { //func para alterar a tarefa de feita para nao feita e vice versa
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { //func para alterar a tarefa de feita para nao feita e
         
         if indexPath.section == 0{
             let removido = self.meusAfazeres.listaIncompletas.remove(at: indexPath.row)
@@ -131,7 +131,7 @@ class MainTableViewController: UITableViewController {
             
             textField.placeholder = "Digite a descrição da tarefa aqui: "
         }
-        
+        // nao vai
         meuAlerta.addAction(confirmarAction)
         meuAlerta.addAction(cancel)
         self.present(meuAlerta, animated: true, completion: nil)
